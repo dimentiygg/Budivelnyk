@@ -4,10 +4,11 @@ import PhoneIcon from '../../assets/PhoneIcon.jsx';
 export default function MobileModal({ isOpen, setIsOpen }) {
   return (
     <>
+      {console.log(isOpen, 1)};
       <div
-        className={`translate-x-full transition ease-out delay-150 ${
-          isOpen ? 'translate-x-0' : ''
-        } flex justify-center flex-col gap-12 absolute top-0 right-0 w-full h-full bg-orn`}
+        className={`flex justify-center flex-col gap-12 fixed top-0 right-0 w-full h-full bg-orn translate-x-[100%] transition ease-out delay-150 ${
+          isOpen ? ' translate-x-[0px]' : ''
+        } `}
       >
         <button
           className="absolute top-8 right-8"

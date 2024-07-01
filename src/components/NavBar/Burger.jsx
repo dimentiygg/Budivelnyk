@@ -15,7 +15,7 @@ export default function Burger() {
         <BurgerIcon className="fill-red-400" />
       </button>
       <div className="flex flex-col justify-between absolute top-0 left-0 w-80 h-screen min-h-full bg-white transition-transform duration-500 transform -translate-x-full p-6 z-50 bg-orn"></div>
-      {isOpen && <MobileModal isOpen={isOpen} />}
+      <MobileModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 }

@@ -53,7 +53,8 @@ export default {
       'hero-bg-t2x':
         "url('./public/images/tablet/hero_background_tablet@2x.jpg')",
       'hero-bg-d': "url('./public/images/desktop/hero_background_desktop.jpg')",
-      'hero-bg-d2x': image,
+      'hero-bg-d2x':
+        "url('./public/images/desktop/hero_background_desktop@2x.jpg')",
     },
     extend: {},
   },

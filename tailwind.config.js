@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -23,6 +24,8 @@ export default {
       'wht-80': ' rgba(255, 255, 255, 0.8)',
       'wht-30': ' rgba(255, 255, 255, 0.3)',
       'orn2-100': ' #fd9271',
+      grd: '#424242',
+      grl: '#747474',
     },
     fontFamily: {
       inter: ['Inter', 'sans-serif'],

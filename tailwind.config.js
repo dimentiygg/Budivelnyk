@@ -1,5 +1,3 @@
-import image from './public/images/desktop/hero_background_desktop@2x.jpg';
-
 /** @type {import('tailwindcss').Config} */
 
 export default {
@@ -46,15 +44,15 @@ export default {
       widest: '.1em',
     },
     backgroundImage: {
-      'hero-bg-m': "url('./public/images/mobile/hero_background_mobile.jpg')",
+      'hero-bg-m': "url('/public/images/mobile/hero_background_mobile.jpg')",
       'hero-bg-m2x':
-        "url('./public/images/mobile/hero_background_mobile@2x.jpg')",
-      'hero-bg-t': "url('./public/images/tablet/hero_background_tablet.jpg')",
+        "url('/public/images/mobile/hero_background_mobile@2x.jpg')",
+      'hero-bg-t': "url('/public/images/tablet/hero_background_tablet.jpg')",
       'hero-bg-t2x':
-        "url('./public/images/tablet/hero_background_tablet@2x.jpg')",
-      'hero-bg-d': "url('./public/images/desktop/hero_background_desktop.jpg')",
+        "url('/public/images/tablet/hero_background_tablet@2x.jpg')",
+      'hero-bg-d': "url('/public/images/desktop/hero_background_desktop.jpg')",
       'hero-bg-d2x':
-        "url('./public/images/desktop/hero_background_desktop@2x.jpg')",
+        "url('/public/images/desktop/hero_background_desktop@2x.jpg')",
     },
     extend: {},
   },

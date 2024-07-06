@@ -26,7 +26,7 @@ const ResponsiveImage = () => {
       />
       <img
         className="mb-6 h-[286px] w-full object-cover "
-        alt="comfortable sofa"
+        alt="Worker"
         src="../../../public/images/mobile/new_catalog_image.jpg"
       />
     </picture>

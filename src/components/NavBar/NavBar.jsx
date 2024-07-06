@@ -17,7 +17,7 @@ export default function NavBar() {
   }
 
   return (
-    <header className="shadow-hd sm:container sm:max-w-none w-full flex justify-between max-w-none pt-8 pb-4 md:p-0 md:pl-12 lg:pl-20  ">
+    <header className="sm:container sm:max-w-none w-full flex justify-between max-w-none pt-8 pb-4 md:p-0 md:pl-12 lg:pl-20 lg:max-w-[1440px] lg:mx-auto">
       <a href="" className="lg:mt-8">
         <LogoComponent />
       </a>

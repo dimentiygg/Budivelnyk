@@ -22,17 +22,23 @@ export default {
       hd: '0 8px 8px 0 rgba(0, 0, 0, 0.08)',
       abt: '0 2px 6px 0 rgba(253, 146, 113, 0.17), 0 2px 6px 0 rgba(0, 0, 0, 0.06)',
     },
+    border: {
+      prbr: '2px solid white ',
+    },
     colors: {
       orn: '#F27E5A',
       orn2: '#fd9271',
       wht: '#FFF',
       'wht-80': ' rgba(255, 255, 255, 0.8)',
       'wht-70': ' rgba(255, 255, 255, 0.7)',
+      'wht-60': ' rgba(255, 255, 255, 0.6)',
       'wht-30': ' rgba(255, 255, 255, 0.3)',
+      'wht-20': 'rgba(255, 255, 255, 0.2)',
       'orn2-100': ' #fd9271',
       grd: '#424242',
       grl: '#747474',
       tr: 'transparent',
+      blbg: '#21222d',
     },
     fontFamily: {
       inter: ['Inter', 'sans-serif'],

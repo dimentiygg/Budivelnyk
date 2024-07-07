@@ -1,17 +1,17 @@
 export default function Products() {
   return (
     <section className="relative sm:-translate-y-[45px] font-inter md:container md:pr-0 md:max-w-none ">
-      <div className="h-[1337px] pb-[68px] sm:mb-[632px] container max-w-none pt-[90px] bg-blbg md:pl-6 md:pr-16 md:h-[792px] md:pt-[96px]">
-        <div className="md:flex mb-16 md:mb-12 lg:justify-around">
-          <div className="">
-            <h2 className="mb-6 font-semibold text-base tracking-small uppercase text-orn2 md:mb-0">
+      <div className="h-[1337px] pb-[68px] container max-w-none sm:mb-[634px] pt-[90px] bg-blbg md:pl-6 md:pr-16 md:h-[792px] md:pt-[96px] lg:h-[948px] lg:pt-[128px] lg:px-0 lg:pl-24 lg:pr-[176px]">
+        <div className="md:flex mb-16 md:mb-12 lg:justify-around  lg:gap-20 lg:mx-auto">
+          <div className="lg:flex lg:flex-col gap-[30px]">
+            <h2 className="mb-6 font-semibold text-base tracking-small uppercase text-orn2 md:mb-0 lg:text-lg lg:mb-[0px]">
               Продукція
             </h2>
-            <p className="w-[328px] mb-12 font-bold text-4xl leading-[125%] text-wht ">
+            <p className="w-[328px] mb-12 font-bold text-4xl leading-[125%] text-wht lg:text-[48px] lg:w-[554px]">
               Широка добірка товарів
             </p>
           </div>
-          <ul className="flex flex-col gap-6 font-normal text-sm leading-[150%] text-wht-80 md:mt-[36px] lg:w-[454px]">
+          <ul className="flex flex-col gap-6 font-normal text-sm leading-[150%] text-wht-80 md:mt-[36px] lg:w-[440px] lg:text-base lg:mt-[66px] ">
             <li>
               <p>
                 У нашому асортименті ви знайдете все необхідне для вашого
@@ -74,7 +74,7 @@ export default function Products() {
               </div>
             </li>
           </ul>
-          <ul className="flex flex-1 flex-col gap-4 mb-[35px] ">
+          <ul className="flex flex-1 flex-col gap-4 mb-[35px] md:mb-0 ">
             <li>
               <div className="relative overflow-hidden h-[159px] pl-6 pt-8 border-2 border-solid border-wht-20 rounded-[24px] bg-orn2 md:h-[180px] md:pl-8 pt-10 md:rounded-[16px] md:rounded-tr-[40px]">
                 <h2 className="font-bold text-xl uppercase text-wht">

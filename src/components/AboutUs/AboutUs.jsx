@@ -6,10 +6,10 @@ import HeartIcon from '../../assets/HeartIcon';
 
 export default function AboutUs() {
   return (
-    <section className="container max-w-none relative md:pb-[46px] lg:flex lg:justify-around">
-      <ul className="flex flex-col lg:order-2 mb-12 mx-auto w-min-[312px] font-inter -translate-y-4 shadow-abt rounded-[32px] md:flex-row lg:flex-col lg:w-[360px] lg: lg:-translate-y-[400px] lg:mb-0 lg:mx-0 lg:h-[861px]">
+    <section className="container max-w-none relative md:pb-[46px] lg:flex lg:justify-around  lg:p-0">
+      <ul className="flex flex-col lg:order-2 mb-12 mx-auto w-min-[312px] font-inter -translate-y-4 shadow-abt rounded-[32px] md:flex-row lg:flex-col lg:w-[360px] lg: lg:-translate-y-[400px] lg:mb-0 lg:mx-0 lg:h-[861px] lg:-translate-x-[176px] ">
         <li className="flex-1">
-          <div className="bg-wht p-8 rounded-t-[32px] md:p-4 md:rounded-none md:rounded-l-[32px]  lg:px-12 lg:py-10 lg:rounded-t-[32px] lg:rounded-bl-[0px] h-full  lg:h-[220px]">
+          <div className="bg-wht p-8 rounded-t-[32px] md:p-4 md:rounded-none md:rounded-l-[32px] lg:px-12 lg:py-10 lg:rounded-t-[32px] lg:rounded-bl-[0px] h-full lg:h-[220px]">
             <div className="flex flex-row gap-2 items-start md:flex-col lg:flex-row ">
               <MedalIcon />
               <h2 className="mb-4 font-semibold text-grd text-xl md:text-base lg:text-xl lg:w-[170px] lg:leading-[125%]">
@@ -63,7 +63,7 @@ export default function AboutUs() {
           </div>
         </li>
       </ul>
-      <div className="lg:order-1 lg:mt-[112px] ">
+      <div className="lg:order-1 lg:mt-[112px] lg:ml-24">
         <div className="relative z-10 rounded-b-[32px] bg-wht md:w-[513px] md:ml-6 lg:pb-[80px] lg:pr-10 lg:w-[534px] lg:ml-0 z-[51]">
           <p className="font-semibold text-base uppercase tracking-small text-orn2 mb-6 font-inter lg:text-lg lg:mb-[30px]">
             про нас

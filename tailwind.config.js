@@ -24,6 +24,7 @@ export default {
     },
     border: {
       prbr: '2px solid white ',
+      form: '1px solid #d9d9d9;',
     },
     colors: {
       orn: '#F27E5A',
@@ -39,6 +40,7 @@ export default {
       grl: '#747474',
       tr: 'transparent',
       blbg: '#21222d',
+      form: 'rgba(66, 66, 66, 0.6)',
     },
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
@@ -66,5 +68,27 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-decoration-skip-ink-none': {
+          'text-decoration-skip-ink': 'none',
+        },
+        '.visually-hidden': {
+          position: 'absolute',
+          width: '1px',
+          height: '1px',
+          margin: '-1px',
+          padding: '0',
+          border: '0',
+          whiteSpace: 'nowrap',
+          clip: 'rect(0 0 0 0)',
+          clipPath: 'inset(100%)',
+          overflow: 'hidden',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 };

@@ -1,7 +1,7 @@
 export default function Products() {
   return (
-    <section className="relative sm:-translate-y-[45px] font-inter md:container md:pr-0 md:max-w-none ">
-      <div className="h-[1337px] pb-[68px] container max-w-none sm:mb-[634px] pt-[90px] bg-blbg md:pl-6 md:pr-16 md:h-[792px] md:pt-[96px] lg:h-[948px] lg:pt-[128px] lg:px-0 lg:pl-24 lg:pr-[176px]">
+    <section className="sm:-translate-y-[45px] font-inter md:container md:pr-0 md:max-w-none ">
+      <div className=" h-[1337px] pb-[68px] container max-w-none sm:mb-[634px] pt-[90px] bg-blbg md:pl-6 md:pr-16 md:h-[792px] md:pt-[96px] lg:h-[948px] lg:pt-[128px] lg:px-0 lg:pl-24 lg:pr-[176px]">
         <div className="md:flex mb-16 md:mb-12 lg:justify-around  lg:gap-20 lg:mx-auto">
           <div className="lg:flex lg:flex-col gap-[30px]">
             <h2 className="mb-6 font-semibold text-base tracking-small uppercase text-orn2 md:mb-0 lg:text-lg lg:mb-[0px]">

@@ -4,8 +4,8 @@ import ContactsForm from './ContatcsForm';
 export default function Contacts() {
   const largerScreen = window.innerWidth >= 834;
   return (
-    <section className="pt-12 pb-[131px] font-inter bg-orn2 overflow-hidden md:flex md:justify-around md:gap-6 md:pt-0 md:pb-[0px] ">
-      <div className=" relative  container max-w-none order-2 md:w-[319px] md:mr-16 md:p-0 md:mt-[178px] md:h-[268px]">
+    <section className="pt-12 pb-[131px] font-inter bg-orn2 md:flex md:justify-around md:gap-6 md:pt-0 md:pb-[0px] ">
+      <div className="relative container  max-w-none order-2 md:w-[319px] md:mr-16 md:p-0 md:mt-[178px] md:h-[268px]">
         <div className="flex flex-col  md:mb-[43px]">
           <h2 className="mb-6 font-semibold text-base tracking-small uppercase text-wht-80 lg:text-lg md:w-fit md:mb-0 ">
             контакти

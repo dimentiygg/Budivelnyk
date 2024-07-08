@@ -6,7 +6,12 @@ export default function NewCatalog() {
   return (
     <section className="relative pb-12 font-inter md:flex md:flex-row md:justify-between md:pb-0 md:mb-24 md:h-[475px] lg:h-[598px] lg:mb-[144px] ">
       <div className="order-2">
-        <ResponsiveImage />
+        <img
+          className="object-cover mb-6 h-[286px] w-full md:absolute md:top-[0px] md:left-[554px] md:h-[475px] md:rounded-tl-[32px] md:rounded-bl-[32px] md:mb-0 md:w-[-webkit-fill-available] lg:top-[0px] lg:left-[833px] lg:h-[598px] "
+          alt="Worker"
+          src="./../../public/images/mobile/new_catalog_image.jpg"
+        />
+        {/* <ResponsiveImage /> */}
         {largerScreen ? <PingButton /> : ''}
       </div>
       <div className="container max-w-none md:w-[474px] md:ml-6 order-1 lg:p-0 lg:ml-[176px]">

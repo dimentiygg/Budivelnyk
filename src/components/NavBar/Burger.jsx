@@ -30,7 +30,7 @@ export default function Burger() {
     <>
       <button
         onClick={onClickHandler}
-        className="absolute md:relative flex justify-center items-center right-4 top-0 w-16 h-[88px] bg-orn rounded-b-3xl md:w-32 md:h-28 md:right-0 lg:w-48 lg:h-32 md:rounded-b-[32px] lg:rounded-b-[32px]"
+        className="absolute md:relative flex justify-center items-center right-4 top-0 w-16 h-[88px] bg-orn rounded-b-3xl md:w-32 md:h-28 md:right-0 lg:w-48 lg:h-32 md:rounded-b-[32px] lg:rounded-b-[32px] z-[50]"
       >
         <ButtonComponent />
       </button>

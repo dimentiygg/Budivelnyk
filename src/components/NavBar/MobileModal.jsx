@@ -28,18 +28,25 @@ export default function MobileModal({ isOpen, setIsOpen }) {
           </li>
         </ul>
         <ul className="flex justify-center items-center gap-4 text-wht-80 font-normal text-xs font-inter mb-[26px] lg:hidden">
-          <li>info@budivelnyk.ua</li>
+          <li>
+            <a href="mailto:info@budivelnyk.ua">info@budivelnyk.ua</a>
+          </li>
           <li>
             <div className="w-px h-2.5 bg-wht-30"></div>
           </li>
-          <li>+380970504169</li>
+          <li>
+            <a href="tel:+380970504169">+380970504169</a>
+          </li>
         </ul>
-        <button className=" translate-x-0 bottom-12 flex justify-center items-center w-24 h-24 mx-auto">
+        <a
+          href="tel:+380970504169"
+          className="absolute -translate-x-1/2 bottom-12 left-[50%] flex justify-center items-center w-24 h-24 mx-auto"
+        >
           <span className="animate-ping absolute  h-full w-full rounded-full bg-orn2-100 opacity-75 md:hidden"></span>
           <span className=" flex relative justify-center items-center rounded-[100px] w-24 h-24 bg-orn2-100">
             <PhoneIcon />
           </span>
-        </button>
+        </a>
       </div>
     </>
   );

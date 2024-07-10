@@ -1,8 +1,11 @@
+import ProductList from './ProductsList';
+
 export default function Products() {
   return (
-    <section className="sm:-translate-y-[45px] font-inter md:container md:pr-0 md:max-w-none ">
-      <div className=" h-[1337px] pb-[68px] container max-w-none sm:mb-[634px] pt-[90px] bg-blbg md:pl-6 md:pr-16 md:h-[792px] md:pt-[96px] lg:h-[948px] lg:pt-[128px] lg:px-0 lg:pl-24 lg:pr-[176px]">
-        <div className="md:flex mb-16 md:mb-12 lg:justify-around  lg:gap-20 lg:mx-auto">
+    <section className="relative  sm:-translate-y-[45px] pb-[35px] font-inter md:pl-10 md:max-w-none ">
+      <div className="absolute bg-blbg h-[1337px] w-full z-[-1]  md:h-[792px]  lg:h-[948px]"></div>
+      <div className=" pt-[90px]  md:pl-6 md:pr-16 md:pt-[96px] lg:px-0 lg:pl-24 lg:pr-[176px] lg:pt-[171px]">
+        <div className="md:flex mb-16 md:mb-12 lg:justify-around  lg:gap-20 lg:mx-auto lg:mb-16">
           <div className="lg:flex lg:flex-col gap-[30px]">
             <h2 className="mb-6 font-semibold text-base tracking-small uppercase text-orn2 md:mb-0 lg:text-lg lg:mb-[0px]">
               Продукція
@@ -30,96 +33,8 @@ export default function Products() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-4 md:top-[435px] md:left-16 md:right-16 md:flex-row md:gap-5 lg:max-w-[1088px] lg:mx-auto">
-          <ul className="flex flex-1 flex-col gap-4">
-            <li>
-              <div className="relative overflow-hidden h-[159px] pl-6 pt-8 border-2 border-solid border-wht-20 rounded-[24px] bg-orn2 md:h-[220px] md:pl-8 pt-10 md:rounded-[16px] md:rounded-tl-[40px]">
-                <h2 className="font-bold text-xl uppercase text-wht">
-                  Інструменти
-                </h2>
-                <p className="font-semibold text-base text-wht-60">
-                  Електроінструменти, Ручні
-                </p>
-                <div className="absolute top-[33px] -right-[39px] w-[200px] h-[200px] bg-wht-20 rounded-full"></div>
-              </div>
-            </li>
-            <li>
-              <div className="relative overflow-hidden h-[159px] pl-6 pt-8 border-2 border-solid border-wht-20 rounded-[24px] bg-orn2 md:h-[180px] md:pl-8 pt-10 md:rounded-[16px]">
-                <h2 className="font-bold text-xl uppercase text-wht">
-                  Метизи та кріплення, цвяхи
-                </h2>
-                <p className="font-semibold text-base text-wht-60">
-                  Будівельне, Електромонтажне
-                </p>
-                <div className="absolute top-[33px] -right-[39px] w-[200px] h-[200px] bg-wht-20 rounded-full"></div>
-              </div>
-            </li>
-            <li>
-              <div className="relative overflow-hidden h-[159px] pl-6 pt-8 border-2 border-solid border-wht-20 rounded-[24px] bg-orn2 md:h-[220px] md:pl-8 pt-10 md:rounded-[16px]">
-                <h2 className="font-bold text-xl uppercase text-wht">
-                  Будівельні матеріали
-                </h2>
-                <p className="font-semibold text-base text-wht-60">
-                  Столярні, Фасадні
-                </p>
-                <div className="absolute top-[33px] -right-[39px] w-[200px] h-[200px] bg-wht-20 rounded-full"></div>
-              </div>
-            </li>
-            <li>
-              <div className="relative overflow-hidden h-[159px] pl-6 pt-8 border-2 border-solid border-wht-20 rounded-[24px] bg-orn2 md:h-[180px] md:pl-8 pt-10 md:rounded-[16px] md:rounded-bl-[40px]">
-                <h2 className="font-bold text-xl uppercase text-wht">
-                  Сантехніка, системи опалення водопостачання та вентиляції
-                </h2>
-                <div className="absolute top-[33px] -right-[39px] w-[200px] h-[200px] bg-wht-20 rounded-full"></div>
-              </div>
-            </li>
-          </ul>
-          <ul className="flex flex-1 flex-col gap-4 mb-[35px] md:mb-0 ">
-            <li>
-              <div className="relative overflow-hidden h-[159px] pl-6 pt-8 border-2 border-solid border-wht-20 rounded-[24px] bg-orn2 md:h-[180px] md:pl-8 pt-10 md:rounded-[16px] md:rounded-tr-[40px]">
-                <h2 className="font-bold text-xl uppercase text-wht">
-                  Лакокрасочні матеріали
-                </h2>
-                <p className="font-semibold text-base text-wht-60">
-                  Електроінструменти, Ручні
-                </p>
-                <div className="absolute top-[33px] -right-[39px] w-[200px] h-[200px] bg-wht-20 rounded-full"></div>
-              </div>
-            </li>
-            <li>
-              <div className="relative overflow-hidden h-[159px] pl-6 pt-8 border-2 border-solid border-wht-20 rounded-[24px] bg-orn2 md:h-[220px] md:pl-8 pt-10 md:rounded-[16px]">
-                <h2 className="font-bold text-xl uppercase text-wht">
-                  Електрика
-                </h2>
-                <p className="font-semibold text-base text-wht-60">
-                  Будівельне, Електромонтажне
-                </p>
-                <div className="absolute top-[33px] -right-[39px] w-[200px] h-[200px] bg-wht-20 rounded-full"></div>
-              </div>
-            </li>
-            <li>
-              <div className="relative overflow-hidden h-[159px] pl-6 pt-8 border-2 border-solid border-wht-20 rounded-[24px] bg-orn2 md:h-[180px] md:pl-8 pt-10 md:rounded-[16px]">
-                <h2 className="font-bold text-xl uppercase text-wht">
-                  Побутова хімія
-                </h2>
-                <p className="font-semibold text-base text-wht-60">
-                  Столярні, Фасадні
-                </p>
-                <div className="absolute top-[33px] -right-[39px] w-[200px] h-[200px] bg-wht-20 rounded-full"></div>
-              </div>
-            </li>
-            <li>
-              <div className="relative overflow-hidden h-[159px] pl-6 pt-8 border-2 border-solid border-wht-20 rounded-[24px] bg-orn2 md:h-[220px] md:pl-8 pt-10 md:rounded-[16px] md:rounded-br-[40px]">
-                <h2 className="font-bold text-xl uppercase text-wht">
-                  Садовий інвентар
-                </h2>
-                <p className="font-semibold text-base text-wht-60">
-                  Одяг та взуття, Спеціальні
-                </p>
-                <div className="absolute top-[33px] -right-[39px] w-[200px] h-[200px] bg-wht-20 rounded-full"></div>
-              </div>
-            </li>
-          </ul>
+        <div className="flex flex-col gap-4 md:top-[435px] md:left-16 md:right-16 md:gap-5 lg:max-w-[1088px] lg:mx-auto">
+          <ProductList />
         </div>
       </div>
     </section>

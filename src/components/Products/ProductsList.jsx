@@ -4,8 +4,8 @@ import ProductsListItem from './ProductsListItem';
 export default function ProductList() {
   return (
     <>
-      <div className="flex flex-col gap-4 md:flex-row md:gap-6">
-        <ul className="flex flex-1 flex-col gap-4 md:gap-6">
+      <div className="flex flex-col md:flex-row  md:gap-5 lg:gap-6">
+        <ul className="flex flex-1 flex-col gap-4 md:gap-5 lg:gap-6">
           {ListData.map(({ id, title, text, big }) => {
             if (id <= 2) {
               return (
@@ -24,7 +24,7 @@ export default function ProductList() {
             return null;
           })}
         </ul>
-        <ul className="flex flex-1 flex-col gap-4 md:gap-6">
+        <ul className="flex flex-1 flex-col gap-4 md:gap-5 lg:gap-6">
           {ListData.map(({ id, title, text, big }) => {
             if (id >= 3 && id < 5) {
               return (
@@ -43,8 +43,8 @@ export default function ProductList() {
           })}
         </ul>
       </div>
-      <div className="flex flex-col gap-4 md:gap-6 md:flex-row">
-        <ul className="flex flex-1 flex-col gap-4 md:gap-6">
+      <div className="flex flex-col gap-4 md:gap-5 lg:gap-6 md:flex-row">
+        <ul className="flex flex-1 flex-col gap-4 md:gap-5 lg:gap-6">
           {ListData.map(({ id, title, text, big }) => {
             if (id > 4 && id < 7) {
               return (
@@ -62,7 +62,7 @@ export default function ProductList() {
             return null;
           })}
         </ul>
-        <ul className="flex flex-1 flex-col gap-4 md:gap-6">
+        <ul className="flex flex-1 flex-col gap-4 md:gap-5 lg:gap-6">
           {ListData.map(({ id, title, text, big }) => {
             if (id > 6) {
               return (

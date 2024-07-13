@@ -58,7 +58,7 @@ export default function ContactsForm() {
       validationSchema={validateSchema}
     >
       {({ values, handleChange, handleBlur, setFieldValue }) => (
-        <Form className="w-full py-8 px-4 bg-wht rounded-[32px] font-inter md:min-w-[363px] md:w-[363px] md:shadow-abt md:ml-16 md:-translate-y-12 md:py-10 md:px-6 px-4">
+        <Form className="w-full py-8 px-4 bg-wht rounded-[32px] font-inter md:min-w-[363px] md:w-[363px] md:shadow-abt  md:-translate-y-12 md:py-10 md:px-6 lg:w-[535px] lg:-translate-y-0 lg:py-[56px] lg:px-10">
           <div className="relative mb-3">
             <label htmlFor="userName" className="flex items-center relative">
               {!values.userName && (
@@ -82,53 +82,54 @@ export default function ContactsForm() {
               component="span"
             />
           </div>
-
-          <div className="relative mb-3">
-            <label htmlFor="email" className="flex items-center relative">
-              {!values.email && (
-                <span className="absolute top-3 left-[55px] font-medium text-xs text-[#f00]">
-                  *
-                </span>
-              )}
-              <Field
-                className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-form"
-                placeholder="Email"
+          <div className="lg:flex gap-6 ">
+            <div className="relative mb-3 flex-1">
+              <label htmlFor="email" className="flex items-center relative">
+                {!values.email && (
+                  <span className="absolute top-3 left-[55px] font-medium text-xs text-[#f00]">
+                    *
+                  </span>
+                )}
+                <Field
+                  className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-form"
+                  placeholder="Email"
+                  name="email"
+                  id="email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email}
+                />
+              </label>
+              <ErrorMessage
+                className="text-[#f00] text-[10px]"
                 name="email"
-                id="email"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.email}
+                component="span"
               />
-            </label>
-            <ErrorMessage
-              className="text-[#f00] text-[10px]"
-              name="email"
-              component="span"
-            />
-          </div>
+            </div>
 
-          <div className="relative mb-6">
-            <label htmlFor="number" className="flex items-center relative">
-              {!values.number && (
-                <span className="absolute top-3 left-[123px] font-medium text-xs text-[#f00]">
-                  *
-                </span>
-              )}
-              <Field
-                className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-form"
-                placeholder="Номер телефону"
+            <div className="relative mb-6 flex-1">
+              <label htmlFor="number" className="flex items-center relative">
+                {!values.number && (
+                  <span className="absolute top-3 left-[123px] font-medium text-xs text-[#f00]">
+                    *
+                  </span>
+                )}
+                <Field
+                  className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-form"
+                  placeholder="Номер телефону"
+                  name="number"
+                  id="number"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.number}
+                />
+              </label>
+              <ErrorMessage
+                className="text-[#f00] text-[10px]"
                 name="number"
-                id="number"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.number}
+                component="span"
               />
-            </label>
-            <ErrorMessage
-              className="text-[#f00] text-[10px]"
-              name="number"
-              component="span"
-            />
+            </div>
           </div>
 
           <div className="relative mb-3">
@@ -221,7 +222,7 @@ export default function ContactsForm() {
           </div>
 
           <button
-            className="flex items-center justify-center gap-[10px] w-full border solid border-wht-20 text-wht bg-orn py-2 px-4 rounded-[16px] font-bold text-base uppercase "
+            className="flex items-center justify-center gap-[10px] w-full border solid border-wht-20 text-wht bg-orn py-2 px-4 rounded-[16px] font-bold text-base uppercase lg:w-[180px]"
             type="submit"
           >
             Відправити

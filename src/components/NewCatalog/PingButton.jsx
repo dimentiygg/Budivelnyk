@@ -2,7 +2,7 @@ import ArrowRight40 from '../../assets/ArrowRight40';
 
 export default function PingButton() {
   return (
-    <div className="absolute w-[364px] top-[315px] left-[255px] flex  items-center gap-6 lg:left-[534px] lg:top-[438px]">
+    <div className="absolute w-[364px] top-[315px] flex items-center gap-6 lg:left-0 -translate-x-[300px] lg:top-[438px]">
       <p className="font-inter text-base text-grd font-semibold lg:top-[114px] lg:left-32 ">
         Переглянути каталог
       </p>

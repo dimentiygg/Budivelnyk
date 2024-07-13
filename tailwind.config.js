@@ -65,6 +65,10 @@ export default {
       'hero-bg-d': "url('/public/images/desktop/hero_background_desktop.jpg')",
       'hero-bg-d2x':
         "url('/public/images/desktop/hero_background_desktop@2x.jpg')",
+      'one': "url('/public/images/desktop/new_catalog_desktop_image.jpg')",
+      two: "url('/img/hero-pattern.svg')",
+      three: "url('/img/hero-pattern.svg')",
+      four: "url('/img/hero-pattern.svg')",
     },
     extend: {},
   },

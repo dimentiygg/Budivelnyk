@@ -1,7 +1,7 @@
 function House() {
   return (
     <svg
-      className="absolute -bottom-[120px] -right-[135px] rotate-[21deg]"
+      className="absolute -top-[180px] -left-[100px] rotate-[21deg]"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="625"

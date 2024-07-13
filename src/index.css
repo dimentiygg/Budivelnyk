@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .clip-inset {
+    clip-path: inset(0px 0px -50px 0px);
+  }
+}
+
 :root {
   position: relative;
   width: 100%;

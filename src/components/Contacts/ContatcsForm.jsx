@@ -58,7 +58,7 @@ export default function ContactsForm() {
       validationSchema={validateSchema}
     >
       {({ values, handleChange, handleBlur, setFieldValue }) => (
-        <Form className="w-full py-8 px-4 bg-wht rounded-[32px] font-inter md:min-w-[363px] md:w-[363px] md:shadow-abt  md:-translate-y-12 md:py-10 md:px-6 lg:w-[535px] lg:-translate-y-0 lg:py-[56px] lg:px-10">
+        <Form className="md:absolute z-10 md:-top-12 left-16 lg:left-24 lg:-top-16 w-full py-8 px-4 order-2 md:order-1 bg-wht rounded-[32px] font-inter md:min-w-[363px] md:w-[363px] md:shadow-abt  md:py-10 md:px-6 lg:w-[535px] lg:py-[56px] lg:px-10">
           <div className="relative mb-3">
             <label htmlFor="userName" className="flex items-center relative">
               {!values.userName && (

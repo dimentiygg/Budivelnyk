@@ -38,17 +38,35 @@ export default function NavBar() {
             </ul>
             <ul className="flex flex-row gap-6 items-center font-semibold text-grd text-base uppercase tracking-small font-inter md:font-bold lg:text-xl">
               <li>
-                <Link to="catalog" smooth={true} duration={500} offset={-70}>
+                <Link
+                  className="cursor-pointer"
+                  to="catalog"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
                   каталог товару
                 </Link>
               </li>
               <li>
-                <Link to="aboutUs" smooth={true} duration={500} offset={-70}>
+                <Link
+                  className="cursor-pointer"
+                  to="aboutUs"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
                   про нас
                 </Link>
               </li>
               <li>
-                <Link to="contacts" smooth={true} duration={500} offset={-70}>
+                <Link
+                  className="cursor-pointer"
+                  to="contacts"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                >
                   контакти
                 </Link>
               </li>

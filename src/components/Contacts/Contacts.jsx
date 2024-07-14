@@ -5,12 +5,11 @@ import ContactsForm from './ContatcsForm';
 export default function Contacts() {
   const largerScreen = window.innerWidth >= 834;
   return (
-    <section className="sm:pt-12 sm:pb-[131px] font-inter bg-orn2 md:pt-0 md:pb-8 lg:pb-[64px] lg:pt-0 ">
+    <section className="sm:pt-12 sm:pb-[131px] font-inter bg-orn2 md:pt-0 md:pb-0  lg:pt-0 ">
       <Element name="contacts">
-        {' '}
         <div className="sm:flex flex-col md:block relative lg:max-w-[1280px] lg:mx-auto">
           <ContactsForm />
-          <div className="overflow-hidden flex flex-col md:flex-row md:gap-6 lg:mx-auto lg:w-[1280px] md:px-16 lg:px-24 md:pt-0 md:pb-[0px] md:-translate-y-0 lg:justify-between ">
+          <div className="overflow-hidden flex flex-col md:flex-row md:gap-6 lg:mx-auto lg:w-[1280px] md:px-16 lg:px-24 md:pt-0 md:pb-[0px] md:-translate-y-0 lg:justify-between md:pb-8 lg:pb-[64px]">
             <div className="flex md:gap-6 lg:gap-[100px] md:translate-y-[178px] lg:translate-y-[128px]">
               {largerScreen && (
                 <div className="w-[363px] min-w-[363px] h-[522px] lg:w-[535px] lg:min-w-[535px] "></div>

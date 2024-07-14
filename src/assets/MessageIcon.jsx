@@ -2,7 +2,7 @@ function MessageIcon({ elementId }) {
   return (
     <svg
       className={`${
-        elementId === 1 ? 'fill-wht ' : 'fill-orn2'
+        elementId === 3 ? ' fill-orn2' : 'fill-wht'
       } ease-in-out duration-200`}
       xmlns="http://www.w3.org/2000/svg"
       width="40"

@@ -41,6 +41,10 @@ export default {
       tr: 'transparent',
       blbg: '#21222d',
       form: 'rgba(66, 66, 66, 0.6)',
+      footbr: 'rgba(226, 231, 245, 0.35)',
+      footgr: '#e2e7f5',
+      footgr2: 'rgba(226, 231, 245, 0.6)',
+      footbr2: 'rgba(226, 231, 245, 0.2)',
     },
     fontFamily: {
       inter: ['Inter', 'sans-serif'],

@@ -1,16 +1,41 @@
+import { useState } from 'react';
+import ArrowRight from '../../assets/ArrowRight';
 import PlayIcon from '../../assets/PlayIcon';
 import AboutUsList from './AboutUsList';
+import AboutUsBgChanger from './AboutUsBgChanger';
+
+import { Element, Link } from 'react-scroll';
 
 export default function AboutUs() {
+  const [elementId, setElementId] = useState(1);
+
   return (
-    <section className="container max-w-none md:pb-[46px] lg:flex lg:justify-around  lg:p-0">
+    <section className="max-w-none md:pb-[46px] lg:flex lg:justify-around lg:p-0">
+      <AboutUsBgChanger elementId={elementId} />
       <div className="relative lg:mx-auto lg:w-[1280px] lg:px-24  ">
-      <AboutUsList />
-        <div className="lg:order-1 lg:mt-[112px]">
-          <div className="relative z-10 rounded-b-[32px] bg-wht md:w-[513px] md:ml-6 lg:pb-[80px] lg:pr-10 lg:w-[534px] lg:ml-0 z-[51]">
-            <p className="font-semibold text-base uppercase tracking-small text-orn2 mb-6 font-inter lg:text-lg lg:mb-[30px]">
-              про нас
-            </p>
+        <div className="mx-4 md:mx-10 pt-[229px] md:pt-[259px] lg:mx-auto">
+          <div className="px-6">
+            <h1 className="leading-[1.20] mb-6 md:mb-8 lg:mb-10 font-extrabold text-5xl text-wht font-inter uppercase max-w-[701px] md:text-[64px] ">
+              будуємо завтра сьогодні
+            </h1>
+            <Link to="catalog" smooth={true} duration={500} offset={-65}>
+              <button className="flex justify-center gap-2.5 items-center mb-16 w-[198px] h-14 bg-orn rounded-2xl text-xl text-wht font-bold fontinter md:mb-[72px]">
+                <span className="h-8">До каталогу</span>
+                <ArrowRight />
+              </button>
+            </Link>
+          </div>
+
+          <AboutUsList set={setElementId} elementId={elementId} />
+        </div>
+        <div className="lg:order-1 lg:pt-[112px] sm:px-6 md:px-10">
+          <div className="relative rounded-b-[32px] bg-wht md:w-[513px] md:ml-6 lg:pb-[80px] lg:pr-10 lg:w-[534px] lg:ml-0 z-[51]">
+            <Element name="aboutUs">
+              <p className="font-semibold text-base uppercase tracking-small text-orn2 mb-6 font-inter lg:text-lg lg:mb-[30px]">
+                про нас
+              </p>
+            </Element>
+
             <h2 className="mb-12 font-bold text-4xl tracking-small text-grd leading-[125%] font-inter md:text-[40px] lg:text-[48px] lg:mb-20 lg:tracking-[0px] ">
               Інструменти
               <span className="block">для ваших</span>

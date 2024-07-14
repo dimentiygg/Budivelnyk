@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import CloseButton from '../../assets/CloseButton.jsx';
 import PhoneIcon from '../../assets/PhoneIcon.jsx';
 
@@ -18,13 +19,37 @@ export default function MobileModal({ isOpen, setIsOpen }) {
         </button>
         <ul className="flex flex-col gap-7 items-center font-semibold text-wht text-base uppercase tracking-small font-inter">
           <li>
-            <a href="">каталог товару</a>
+            <Link
+              to="catalog"
+              onClick={() => setIsOpen(false)}
+              smooth={true}
+              duration={500}
+              offset={-65}
+            >
+              каталог товару
+            </Link>
           </li>
           <li>
-            <a href="">про нас</a>
+            <Link
+              to="aboutUs"
+              onClick={() => setIsOpen(false)}
+              smooth={true}
+              duration={500}
+              offset={-40}
+            >
+              про нас
+            </Link>
           </li>
           <li>
-            <a href="">контакти</a>
+            <Link
+              to="contacts"
+              onClick={() => setIsOpen(false)}
+              smooth={true}
+              duration={500}
+              offset={-45}
+            >
+              контакти
+            </Link>
           </li>
         </ul>
         <ul className="flex justify-center items-center gap-4 text-wht-80 font-normal text-xs font-inter mb-[26px] lg:hidden">

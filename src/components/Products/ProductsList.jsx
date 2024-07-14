@@ -4,7 +4,7 @@ import ProductsListItem from './ProductsListItem';
 export default function ProductList() {
   return (
     <>
-      <div className="flex flex-col md:flex-row  md:gap-5 lg:gap-6">
+      <div className="flex flex-col gap-4 md:flex-row  md:gap-5 lg:gap-6">
         <ul className="flex flex-1 flex-col gap-4 md:gap-5 lg:gap-6">
           {ListData.map(({ id, title, text, big }) => {
             if (id <= 2) {

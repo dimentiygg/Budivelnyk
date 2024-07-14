@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll';
 import House from '../../assets/House';
 import ContactsForm from './ContatcsForm';
 
@@ -14,12 +15,15 @@ export default function Contacts() {
             )}
             <div className="relative lg:w-[455px] sm:px-4 order-2 md:mr-16 md:p-0  md:h-[268px] ">
               <div className="flex flex-col md:mb-[43px] lg:mb-[62px]">
-                <h2 className="mb-6 font-semibold text-base tracking-small uppercase text-wht-80 lg:text-lg md:w-fit md:mb-0 lg:mb-[10px] ">
-                  контакти
-                </h2>
-                <p className="mb-12 font-bold text-4xl leading-[125%] text-wht md:text-[40px] md:w-[224px] lg:text-[48px] md:mb-0  lg:w-[304px]">
+                <Element name="contacts">
+                  <p className="mb-6 font-semibold text-base tracking-small uppercase text-wht-80 lg:text-lg md:w-fit md:mb-0 lg:mb-[10px] ">
+                    контакти
+                  </p>
+                </Element>
+
+                <h2 className="mb-12 font-bold text-4xl leading-[125%] text-wht md:text-[40px] md:w-[224px] lg:text-[48px] md:mb-0  lg:w-[304px]">
                   Зв'яжіться з нами
-                </p>
+                </h2>
               </div>
 
               <div className="absolute w-[3px] h-24 rounded-[60px] bg-wht-80"></div>
@@ -28,7 +32,7 @@ export default function Contacts() {
                 нашої продукції, послуг- заповніть форму зворотного зв'язку, і
                 ми зв'яжемося з вами у найкоротші терміни.
               </p>
-              {/* {largerScreen && <House />} */}
+              {largerScreen && <House />}
             </div>
           </div>
         </div>

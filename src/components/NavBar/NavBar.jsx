@@ -2,6 +2,7 @@ import MobileHeaderLogo from '../../assets/MobileHeaderLogo.jsx';
 import TabletHeaderLogo from '../../assets/TabletHeaderLogo.jsx';
 import DesktopHeaderLogo from '../../assets/DesktopHeaderLogo.jsx';
 import Burger from './Burger.jsx';
+import { Link } from 'react-scroll';
 
 export default function NavBar() {
   const screenWidth = window.innerWidth;
@@ -25,21 +26,31 @@ export default function NavBar() {
         {largeScreen && (
           <div className="md:flex md:flex-col md:gap-5 lg:gap-[24.5px]">
             <ul className="flex justify-end items-center gap-4 text-grl font-normal text-xs font-inter ">
-              <li>info@budivelnyk.ua</li>
+              <li>
+                <a href="mailto:info@budivelnyk.ua">info@budivelnyk.ua</a>
+              </li>
               <li>
                 <div className="w-px h-2.5 bg-[#d9d9d9]"></div>
               </li>
-              <li>+380970504169</li>
+              <li>
+                <a href="tel:+380970504169">+380970504169</a>
+              </li>
             </ul>
             <ul className="flex flex-row gap-6 items-center font-semibold text-grd text-base uppercase tracking-small font-inter md:font-bold lg:text-xl">
               <li>
-                <a href="">каталог товару</a>
+                <Link to="catalog" smooth={true} duration={500} offset={-70}>
+                  каталог товару
+                </Link>
               </li>
               <li>
-                <a href="">про нас</a>
+                <Link to="aboutUs" smooth={true} duration={500} offset={-70}>
+                  про нас
+                </Link>
               </li>
               <li>
-                <a href="">контакти</a>
+                <Link to="contacts" smooth={true} duration={500} offset={-70}>
+                  контакти
+                </Link>
               </li>
             </ul>
           </div>

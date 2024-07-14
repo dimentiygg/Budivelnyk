@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import ArrowRight40 from '../../assets/ArrowRight40';
 
 export default function PingButton() {
@@ -7,12 +8,14 @@ export default function PingButton() {
         Переглянути каталог
       </p>
       <div className="w-12 h-[3px] bg-[#d9d9d9] rounded-[60px]"></div>
-      <button className="relative flex justify-center items-center w-20 h-20">
-        <span className="animate-ping absolute h-full w-full rounded-full bg-orn2-100 opacity-75"></span>
-        <span className="flex relative justify-center items-center rounded-[100px] w-20 h-20 bg-orn2-100 md:justify-center ">
-          <ArrowRight40 />
-        </span>
-      </button>
+      <Link to="catalog" smooth={true} duration={500} offset={-70}>
+        <button className="relative flex justify-center items-center w-20 h-20">
+          <span className="animate-ping absolute h-full w-full rounded-full bg-orn2-100 opacity-75"></span>
+          <span className="flex relative justify-center items-center rounded-[100px] w-20 h-20 bg-orn2-100 md:justify-center ">
+            <ArrowRight40 />
+          </span>
+        </button>
+      </Link>
     </div>
   );
 }

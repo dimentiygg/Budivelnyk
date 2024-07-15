@@ -67,7 +67,7 @@ export default function ContactsForm() {
                 </span>
               )}
               <Field
-                className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-form"
+                className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em]  text-grl placeholder:text-form"
                 placeholder="Ім'я та Прізвище"
                 name="userName"
                 id="userName"
@@ -91,7 +91,7 @@ export default function ContactsForm() {
                   </span>
                 )}
                 <Field
-                  className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-form"
+                  className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em]  text-grl placeholder:text-form"
                   placeholder="Email"
                   name="email"
                   id="email"
@@ -115,7 +115,7 @@ export default function ContactsForm() {
                   </span>
                 )}
                 <Field
-                  className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-form"
+                  className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-grl placeholder:text-form"
                   placeholder="Номер телефону"
                   name="number"
                   id="number"
@@ -140,7 +140,7 @@ export default function ContactsForm() {
                 </span>
               )}
               <Field
-                className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-form"
+                className="w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-grl placeholder:text-form"
                 placeholder="Тема"
                 name="topic"
                 id="topic"
@@ -164,7 +164,7 @@ export default function ContactsForm() {
                 </span>
               )}
               <Field
-                className="max-h-[128px] min-h-[128px] w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-form resize-none"
+                className="max-h-[128px] min-h-[128px] w-full py-3 px-5 border border-solid border-[#d9d9d9] rounded-[4px] font-medium text-xs -tracking-[0.01em] text-grl placeholder:text-form resize-none"
                 as="textarea"
                 placeholder="Повідомлення..."
                 name="message"
@@ -189,7 +189,7 @@ export default function ContactsForm() {
                 </span>
               )}
               <Field
-                className="visually-hidden checked:bg-orn"
+                className="visually-hidden checked:bg-orn text-grl placeholder:text-form"
                 type="checkbox"
                 name="checked"
                 value="policyTrue"

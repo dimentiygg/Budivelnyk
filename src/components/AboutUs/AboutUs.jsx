@@ -10,7 +10,7 @@ export default function AboutUs() {
   const [elementId, setElementId] = useState(1);
 
   return (
-    <section className="max-w-none md:pb-[46px] lg:flex lg:justify-around lg:p-0">
+    <section className="max-w-none md:pb-[46px] lg:flex lg:justify-around lg:p-0 sm:mt-[80px] lg:mt-[128px]">
       <AboutUsBgChanger elementId={elementId} />
       <div className="relative lg:mx-auto lg:w-[1280px] lg:px-24  ">
         <div className="mx-4 md:mx-10 pt-[229px] md:pt-[259px] lg:mx-auto">
